@@ -1,13 +1,14 @@
 import React from 'react';
-import { Page1 } from "./Page_1";
-import { Page3 } from "./Page_3";
+import pageData from "./PageData";
+
 
 function OddPages() {
     return (
         <>
-        <Page1 />
         <br />
-        <Page3 />
+        {pageData.page1}
+        <br />
+        {pageData.page3}
         </>
     );
 }

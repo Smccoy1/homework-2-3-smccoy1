@@ -2,13 +2,13 @@ import React from 'react';
 
 import './App.css';
 import { Route, Link } from 'react-router-dom';
-import { Page1 } from './Page_1';
-import { Page2 } from './Page_2';
-import { Page3 } from './Page_3';
-import { Page4 } from './Page_4';
-import AllPages from './All_Pages';
-import OddPages from './Odd_Pages';
-import EvenPages from './Even_Pages';
+import { Page1 } from './components/Page_1';
+import { Page2 } from './components/Page_2';
+import { Page3 } from './components/Page_3';
+import { Page4 } from './components/Page_4';
+import AllPages from './components/All_Pages';
+import OddPages from './components/Odd_Pages';
+import EvenPages from './components/Even_Pages';
 
 function App() {
   return (
@@ -48,8 +48,8 @@ function App() {
       <Route path="/page_3" component={Page3} />
       <Route path="/page_4" component={Page4} />
       <Route path="/all_pages" component={AllPages} exact />
-      {/* <Route page="/odd_pages" component={OddPages} exact /> */}
-      {/* <Route page="/even_pages" component={EvenPages} exact /> */}
+      <Route path="/odd_pages" component={OddPages} exact />
+      <Route path="/even_pages" component={EvenPages} exact />
 
     </main>
     

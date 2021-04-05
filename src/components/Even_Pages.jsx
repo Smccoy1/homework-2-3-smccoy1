@@ -1,13 +1,14 @@
 import React from 'react';
-import { Page2 } from "./Page_2";
-import { Page4 } from "./Page_4";
+import pageData from "./PageData";
+
 
 function EvenPages() {
     return (
         <>
-        <Page2 />
         <br />
-        <Page4 />
+        {pageData.page2}
+        <br />
+        {pageData.page4}
         </>
     );
 }
